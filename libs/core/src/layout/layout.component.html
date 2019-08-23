@@ -1,0 +1,8 @@
+<div class="layout-container" fxLayout.gt-xs="row" fxLayoutAlign="start start" fxLayoutGap.gt-xs="25px">
+	<div fxFlex="30%" class="side-panel" fxFlex.xs="100%">
+		<ng-template [ngTemplateOutlet]="sideTemplate"></ng-template>
+	</div>
+	<div class="content" fxFlex.xs="100%">
+		<ng-template [ngTemplateOutlet]="contentTemplate"></ng-template>
+	</div>
+</div>

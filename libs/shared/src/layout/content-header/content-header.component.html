@@ -1,0 +1,23 @@
+<div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutGap="20px">
+	<div class="date-container" [fxHide.xs]="true">
+		<div *ngFor="let date of dates">{{date}}</div>
+	</div>
+
+	<div>
+		<div fxLayout.xs="row" fxLayoutAlign.xs="space-between start">
+			<div>
+				<h3>{{title}}</h3>
+				<h4 *ngIf="subtitle || subtitleTemplate">
+					<ng-template [ngTemplateOutlet]="subtitleTemplate"></ng-template>
+					<ng-template [ngTemplateOutlet]="technologies"></ng-template>
+				</h4>
+			</div>
+
+			<div class="date-container">
+				<span *ngFor="let date of dates" fxHide [fxShow.xs]="true">{{date}}</span>
+			</div>
+		</div>
+
+		<ng-content></ng-content>
+	</div>
+</div>

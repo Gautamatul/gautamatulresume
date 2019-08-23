@@ -1,0 +1,70 @@
+@import '../variables.scss';
+
+.icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100%;
+    font-size: 22px;
+    color: white;
+    background-position: 0 -200%;
+
+}
+
+.experience-icon {
+
+    position: relative;
+    top: -2px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 xmlns:xlink%3D%22http://www.w3.org/1999/xlink%22 width%3D%2232%22 height%3D%22128%22 viewbox%3D%220 0 32 128%22%3E%3Cdefs%3E%3Cg id%3D%22icoExperience%22%3E%3Cpath d%3D%22M30 5.983h-7.987V4.045c0-1.655-1.345-3-3-3h-6.015c-1.655 0-3 1.345-3 3v1.938H2.001C.9 5.983 0 6.883 0 7.982V28.953c0 1.1.9 2.001 2 2.001h28c1.099 0 2-.9 2-2V7.981a2.008 2.008 0 0 0-2-1.999zM12 4.045c0-.551.447-1 1-1h6.011c.55 0 1 .447 1 1v1.938H12V4.045zM2 7.982h28v7.008H18.986v-1.025c0-1.101-.897-2-1.998-2h-1.993c-1.101 0-2 .897-2 2v1.025H2V7.982zm14.989 11.02h-1.993v-5.037h1.993v5.037zM2 28.951V16.988h10.997V19c0 1.102.897 2 2 2h1.99a2.002 2.002 0 0 0 2-2v-2.01h11.011v11.963H2.001z%22/%3E%3C/g%3E%3C/defs%3E%3Cuse x%3D%220%22 y%3D%220%22 style%3D%22fill:%23000%22 xlink:href%3D%22%23icoExperience%22 /%3E%3Cuse x%3D%220%22 y%3D%2264%22 style%3D%22fill:%23fff%22 xlink:href%3D%22%23icoExperience%22 /%3E%3C/svg%3E");
+}
+
+.education-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 xmlns:xlink%3D%22http://www.w3.org/1999/xlink%22 width%3D%2232%22 height%3D%22128%22 viewbox%3D%220 0 32 128%22%3E%3Cdefs%3E%3Cg id%3D%22icoEducation%22%3E%3Cpath d%3D%22M30.96 22.58v-9.217l.503-.303c.327-.194.533-.58.537-1 .004-.421-.196-.81-.518-1.014L16.44 1.848a.893.893 0 0 0-.967.004l-14.96 9.21c-.318.202-.515.587-.513 1.005.002.417.203.8.525.998l6.573 3.999a1.256 1.256 0 0 0-.133.56v9.669c0 .325.122.637.335.853.217.22 2.294 2.146 8.646 2.146 6.33 0 8.463-1.82 8.686-2.028a1.21 1.21 0 0 0 .367-.884v-9.917c0-.16-.03-.313-.082-.452l4.044-2.441v8.016c-.593.396-.995 1.124-.995 1.965 0 1.262.895 2.285 2 2.285 1.104 0 1.999-1.023 1.999-2.285 0-.845-.407-1.576-1.005-1.97zM23 26.725c-.787.432-2.866 1.282-7.054 1.282-4.214 0-6.246-.905-6.982-1.34v-8.468l6.493 3.95a.892.892 0 0 0 .937.006L23 18.17v8.556zm-7.06-6.876L3.08 12.045l12.881-7.89 12.922 7.868L15.94 19.85z%22/%3E%3C/g%3E%3C/defs%3E%3Cuse x%3D%220%22 y%3D%220%22 style%3D%22fill:%23000%22 xlink:href%3D%22%23icoEducation%22 /%3E%3Cuse x%3D%220%22 y%3D%2264%22 style%3D%22fill:%23fff%22 xlink:href%3D%22%23icoEducation%22 /%3E%3C/svg%3E");
+}
+
+.icon-container {
+    background-color: $background-color;
+    padding: 4px;
+    border-radius: 50%;
+    border-width: .7rem;
+}
+
+.material-icon {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    left: -2px;
+    top: 2px;
+    position: relative;
+    color: white;
+}
+
+.personal-projects-icon::after {
+    content: 'build';
+}
+
+.software-icon::after {
+    content: 'computer';
+    padding-left: 4px;
+    font-style: normal;
+}
+
+.skills-icon::after {
+    content: 'grade';
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.personal-info-icon::after {
+    content: 'person';
+    font-style: normal;
+    padding-left: 4px;
+}
+
+.languages-icon::after {
+    content: 'language';
+    font-style: normal;
+    padding-left: 4px;
+}

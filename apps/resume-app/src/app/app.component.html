@@ -1,0 +1,41 @@
+<layout>
+  <ng-template #sideTemplate>
+    <panel-header></panel-header>
+
+    <panel-section-header title="Personal Info" icon="material-icon personal-info-icon"></panel-section-header>
+    <panel-section-content>
+      <personal-info></personal-info>
+    </panel-section-content>
+
+    <panel-section-header title="Skills" icon="material-icon personal-info-icon"></panel-section-header>
+    <panel-section-content>
+      <skills></skills>
+    </panel-section-content>
+
+    <panel-section-header title="Software" icon="material-icon personal-info-icon"></panel-section-header>
+    <panel-section-content>
+      <software></software>
+    </panel-section-content>
+
+    <panel-section-header title="Languages" icon="material-icon personal-info-icon"></panel-section-header>
+    <panel-section-content>
+      <languages></languages>
+    </panel-section-content>
+
+
+  </ng-template>
+  <ng-template #contentTemplate>
+    <body-header></body-header>
+
+    <body-section-header title="Experience" icon="icon experience-icon"></body-section-header>
+    <experience></experience>
+
+    <body-section-header title="Education" icon="icon education-icon"></body-section-header>
+    <education></education>
+
+    <br>
+    <body-section-header title="Hobbies and Interests" icon="material-icon personal-projects-icon"></body-section-header>
+    <hobbies-interests></hobbies-interests>
+
+  </ng-template>
+</layout>
